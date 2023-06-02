@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>{{title}}</h1>
+   <input type="text" (input)="setValue($event)"/>
+   {{ValueInput}}
+   <hr/>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ products[0]._id}}</td>
+                <td><img [src]="products[0].img" /></td>
+                <td>{{products.[0].name}}</td>
+                <td>{{products.[0].name}}</td>
+                <td>
+                    <button class="btn btn-danger">Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
